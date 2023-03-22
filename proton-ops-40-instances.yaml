@@ -7,4 +7,3 @@ sync:
             instance-2: 
                 branch: master
                 spec: ./svc-specs-for-ss/original_40_instances.yaml
-           
