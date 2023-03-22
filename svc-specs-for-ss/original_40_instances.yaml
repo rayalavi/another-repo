@@ -5,8 +5,13 @@ pipeline:
   my_sample_pipeline_required_input: "uselesschange"
 
 instances:
-  - name: "load-test-svc-instance1"
-    environment: "load-test-env"
+  - name: "instance-1"
+    environment: "lambda-env"
+    spec:
+      my_sample_service_instance_optional_input: "BAD"
+      my_sample_service_instance_required_input: "AWFUL"
+  - name: "instance-2"
+    environment: "lambda-env"
     spec:
       my_sample_service_instance_optional_input: "BAD"
       my_sample_service_instance_required_input: "AWFUL"
